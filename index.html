@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Charlzk Portfolio 1</title>
+  <meta name='viewport' content='width=375, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/main.min.css'>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3D5A80; border-bottom: solid 1px rgba(0,0,0,.12) !important;">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Charlzk</a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#NavbarOffcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="offcanvas offcanvas-start" style="background-color: #3D5A80;" id="NavbarOffcanvas">
+          <div class="offcanvas-header" style="border-bottom: solid 1px rgba(0,0,0,.12) !important;">
+            <h5 class="offcanvas-title text-white">Charlzk</h5>
+            <button type="button" class="btn btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-start justify-content-lg-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#recent-works">Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+            <div class="ms-0 ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-primary rounded-3 px-4 w-100" href="#form">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="modal fade" data-bs-backdrop="static" id="mainFormModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Success</h5>
+            <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>Your form has been successfully submitted!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="header text-white pt-5" style="background-color: #3D5A80;">
+      <div class="container">
+        <div class="row h-100">
+          <div class="col-lg d-flex flex-column justify-content-center">
+            <h1 class="fw-bold">Create your website<br><span class="text-primary">in less than 12 days</span></h1>
+            <p>Hey, I’m Mark Essein. A fullstack web developer with 7 years experience building successful websites and applications. I can build a high converting website for you as quick as possible!</p>
+            <div>
+              <a class="btn btn-primary rounded-3 px-4" href="#form">Get in Touch</a>
+            </div>
+          </div>
+          <div class="col-lg d-flex justify-content-center position-relative mt-5 mt-lg-0">
+            <div class="ellipse"></div>
+            <img class="image img-fluid" src="./assets/img/header.png" alt="header.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me" class="about-me text-white py-5" style="background-color: #293241;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg d-flex justify-content-center">
+            <img class="img-fluid" src="./assets/img/about-me.png" alt="about-me.png">
+          </div>
+          <div class="col-lg mt-3 mt-lg-0">
+            <h2>About Me</h2>
+            <div class="separator my-3"></div>
+            <p>My passion for building websites started since 2013 and since then i have helped companies around the world build amazing websites and products that create real value for the business and users.</p>
+            <p>I enjoy solving problems with clean scalable solutions and I also have a genuine passion for inspiring design.</p>
+            <p>I am a Full Stack developer focusing on core frontend and backend technologies which include HTML, CSS, Javascript, React and other core languages</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="companies text-white py-5" style="background-color: #2F3746;">
+      <div class="container">
+        <h3 class="text-center">Companies I have worked for</h3>
+        <div class="d-flex justify-content-center">
+          <div class="separator mt-3"></div>
+        </div>
+        <div class="row gap-5 mt-5">
+          <div class="col-lg d-flex justify-content-center">
+            <img class="img-fluid" src="./assets/img/companies/google.png" alt="google.png">
+          </div>
+          <div class="col-lg d-flex justify-content-center">
+            <img class="img-fluid" src="./assets/img/companies/bolt.png" alt="bolt.png">
+          </div>
+          <div class="col-lg d-flex justify-content-center">
+            <img class="img-fluid" src="./assets/img/companies/amazon.png" alt="amazon.png">
+          </div>
+          <div class="col-lg d-flex justify-content-center">
+            <img class="img-fluid" src="./assets/img/companies/paypal.png" alt="paypal.png">
+          </div>
+          <div class="col-lg d-flex justify-content-center">
+            <img class="img-fluid" src="./assets/img/companies/netflix.png" alt="netflix.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recent-works" class="recent-works text-white py-5" style="background-color: #293241;">
+      <div class="container">
+        <h3>My Recent Works</h3>
+        <div class="separator mt-3"></div>
+        <div class="mt-3">
+          <div class="d-flex justify-content-center justify-content-md-between flex-wrap gap-3">
+            <div class="item">
+              <p>Ecommerce Landing Page</p>
+              <img class="rounded" src="./assets/img/works/ecommerce.png" alt="ecommerce.png">
+            </div>
+            <div class="item">
+              <p>Basketball Studio</p>
+              <img class="rounded" src="./assets/img/works/basketball-studio.png" alt="basketball-studio.png">
+            </div>
+            <div class="item">
+              <p>Perfume Company Site</p>
+              <img class="rounded" src="./assets/img/works/perfume-site.png" alt="perfume-site.png">
+            </div>
+
+            <div class="item">
+              <p>Health Care Site</p>
+              <img class="rounded" src="./assets/img/works/health-care-site.png" alt="health-care-site.png">
+            </div>
+            <div class="item">
+              <p>Real State</p>
+              <img class="rounded" src="./assets/img/works/real-state.png" alt="real-state.png">
+            </div>
+            <div class="item">
+              <p>Bank Wallet</p>
+              <img class="rounded" src="./assets/img/works/bank-wallet.png" alt="bank-wallet.png">
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-primary px-5 rounded-3 fw-semibold">See More</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="form" class="form text-white py-5" data-bs-theme="dark" style="background-color: #3D5A80;">
+      <div class="container">
+        <h3>Tell me about your project</h3>
+        <div class="separator mt-3"></div>
+        <form class="mt-3 needs-validation" id="mainForm" novalidate>
+          <div class="row gap-3 gap-lg-0">
+            <div class="col-lg">
+              <div class="form-floating">
+                <input type="text" class="form-control" name="name" placeholder="" id="name" required>
+                <label for="name">Name</label>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="form-floating">
+                <input type="email" class="form-control" name="email" placeholder="" id="email" required>
+                <label for="email">Email Address</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control mt-3" name="description" placeholder="" id="description" style="height: 250px;" required></textarea>
+            <label for="description">Message Description</label>
+          </div>
+          <div class="mt-3">
+            <button type="submit" class="btn btn-primary px-5 rounded-3">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer text-white py-4" style="background-color: #293241;">
+    <div class="container">
+      <div class="row gap-2">
+        <div class="col-lg d-flex align-items-center justify-content-center justify-content-lg-start">
+          <span class="fw-semibold" style="font-size: 20px;">Charlzk</span>
+        </div>
+        <div class="col-lg d-flex align-items-center justify-content-center">
+          <span>&copy; Copyright 2024. All right reserved</span>
+        </div>
+        <div class="col-lg">
+          <div class="row gap-2">
+            <div class="col-xl d-flex justify-content-center justify-content-xl-end align-items-center">
+              <span>Connect with me:</span>
+            </div>
+            <div class="col-xl d-flex flex-row justify-content-center align-items-center gap-4">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-messenger"></i>
+              <i class="bi bi-discord"></i>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src='./assets/js/main.js'></script>
+</body>
+</html>

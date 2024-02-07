@@ -1,0 +1,116 @@
+@use "sass:map";
+
+$primary: #EE6C4D;
+$gray-900: #212529 !default;
+
+$navbar-padding-y: 1.5rem;
+$navbar-nav-link-padding-x: 1rem;
+$navbar-dark-icon-color: white;
+
+$input-bg: #29405e;
+
+$modal-fade-transform: scale(.1);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+html,
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+}
+
+button.btn, a.btn {
+  color: white !important;
+}
+
+section.header {
+  .ellipse {
+    height: 300px;
+    width: 300px;
+    clip-path: circle(50% at 50% 50%);
+    background-color: white;
+    z-index: 0;
+    position: absolute;
+  }
+
+  .image {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+section.about-me {
+  .separator {
+    width: 100%;
+    height: 2.5px;
+    background-color: #EE6C4D;
+  }
+}
+
+section.companies {
+  .separator {
+    width: 100px;
+    height: 2.5px;
+    background-color: #EE6C4D;
+  }
+}
+
+section.recent-works {
+  .separator {
+    width: 100px;
+    height: 2.5px;
+    background-color: #EE6C4D;
+  }
+
+  .item {
+    img {
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width:map.get($breakpoints, sm)) {
+    .item {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+section.form {
+  .separator {
+    width: 100px;
+    height: 2.5px;
+    background-color: #EE6C4D;
+  }
+}
+
+footer.footer {
+  i {
+    font-size: 32px;
+    scale: 1;
+    cursor: pointer;
+    transition: scale .25s ease-in-out;
+  }
+  i:hover {
+    scale: 1.2;
+  }
+  i:active {
+    scale: 1;
+  }
+}
